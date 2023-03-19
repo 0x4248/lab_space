@@ -19,8 +19,6 @@ Each of the images comes with tools such as:
 - `nano`
 - `vim`
 
-
-
 ### C
 To run the C image, use the following command:
 ```bash
