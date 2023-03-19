@@ -1,7 +1,7 @@
 # 🧪 Lab space
 A collection of docker images for quick testing of code.
 
-<img src="https://github.com/awesomelewis2007/lab_space/blob/master/out.gif" width=200>
+<img src="https://github.com/awesomelewis2007/lab_space/blob/master/demo.gif" width=500>
 
 ## 🗃️ Docker images
 
