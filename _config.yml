@@ -1,0 +1,4 @@
+remote_theme: pages-themes/minimal@v0.2.0
+title: Lab Space
+description: A collection of docker images for quick testing of code.
+logo: logo.png
