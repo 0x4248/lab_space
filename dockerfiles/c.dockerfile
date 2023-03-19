@@ -6,4 +6,10 @@ FROM gcc:latest
 
 COPY lab_spaces/c /usr/src/
 
+RUN apt-get update && apt-get install -y \
+    git \
+    curl \
+    nano \ 
+    vim
+
 WORKDIR /usr/src/

@@ -10,6 +10,15 @@ A collection of docker images for quick testing of code.
 - `Bash`
 - `Nodejs`
 
+Each of the images comes with tools such as:
+- `git`
+- `curl`
+- `make`
+- `nano`
+- `vim`
+
+
+
 ### C
 To run the C image, use the following command:
 ```bash

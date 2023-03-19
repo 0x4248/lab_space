@@ -6,7 +6,13 @@ FROM ubuntu:latest
 
 COPY lab_spaces/nodejs /usr/src/
 
-RUN apt-get update && apt-get install -y 
-RUN apt-get install -y nodejs npm
+RUN apt-get update && apt-get install -y \
+    nodejs \
+    npm \
+    git \
+    curl \
+    make \
+    nano \ 
+    vim
 
 WORKDIR /usr/src/

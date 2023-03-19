@@ -6,4 +6,10 @@ FROM rust:latest
 
 COPY lab_spaces/rust /usr/src/
 
+RUN apt-get update && apt-get install -y \
+    git \
+    curl \
+    nano \ 
+    vim
+
 WORKDIR /usr/src/
