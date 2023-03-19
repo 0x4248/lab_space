@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-labspace",
+  "version": "1.0.0",
+  "description": "A set of docker containers to experiment code",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node src/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/awesomelewis2007/lab_space.git"
+  },
+  "author": "",
+  "license": "GNUv3",
+  "bugs": {
+    "url": "https://github.com/awesomelewis2007/lab_space/issues"
+  },
+  "homepage": "https://github.com/awesomelewis2007/lab_space#readme"
+}

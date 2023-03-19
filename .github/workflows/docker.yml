@@ -1,0 +1,43 @@
+name: publish
+on: [push]
+jobs:
+  publish-docker-image:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.DOCKER_TOKEN }}
+      - name: Build docker bash image
+        run: |
+          docker build -f dockerfiles/bash.dockerfile --tag ghcr.io/awesomelewis2007/lab_space_bash:latest
+          docker run ghcr.io/awesomelewis2007/lab_space_bash:latest
+          docker push ghcr.io/awesomelewis2007/lab_space_bash:latest
+      - name: Build docker c image
+        run: |
+          docker build -f dockerfiles/c.dockerfile --tag ghcr.io/awesomelewis2007/lab_space_c:latest
+          docker run ghcr.io/awesomelewis2007/lab_space_c:latest
+          docker push ghcr.io/awesomelewis2007/lab_space_c:latest
+      - name: Build docker cpp image
+        run: |
+          docker build -f dockerfiles/cpp.dockerfile --tag ghcr.io/awesomelewis2007/lab_space_cpp:latest
+          docker run ghcr.io/awesomelewis2007/lab_space_cpp:latest
+          docker push ghcr.io/awesomelewis2007/lab_space_cpp:latest
+      - name: Build docker nodejs image
+        run: |
+          docker build -f dockerfiles/nodejs.dockerfile --tag ghcr.io/awesomelewis2007/lab_space_nodejs:latest
+          docker run ghcr.io/awesomelewis2007/lab_space_nodejs:latest
+          docker push ghcr.io/awesomelewis2007/lab_space_nodejs:latest
+      - name: Build docker python image
+        run: |
+          docker build -f dockerfiles/python.dockerfile --tag ghcr.io/awesomelewis2007/lab_space_python:latest
+          docker run ghcr.io/awesomelewis2007/lab_space_python:latest
+          docker push ghcr.io/awesomelewis2007/lab_space_python:latest
+      - name: Build docker rust image
+        run: |
+          docker build -f dockerfiles/rust.dockerfile --tag ghcr.io/awesomelewis2007/lab_space_rust:latest
+          docker run ghcr.io/awesomelewis2007/lab_space_rust:latest
+          docker push ghcr.io/awesomelewis2007/lab_space_rust:latest
