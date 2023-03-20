@@ -15,6 +15,6 @@ RUN apt-get update && apt-get install -y \
 
 WORKDIR /usr/src/
 
-RUN cargo RUN
+RUN cargo run
 
 RUN rm -rf target
