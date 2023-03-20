@@ -16,3 +16,5 @@ RUN apt-get update && apt-get install -y \
     vim
 
 WORKDIR /usr/src/
+
+RUN make

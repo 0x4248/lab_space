@@ -7,9 +7,14 @@ FROM gcc:latest
 COPY lab_spaces/cpp /usr/src/
 
 RUN apt-get update && apt-get install -y \
+    make \
     git \
     curl \
     nano \ 
     vim
 
 WORKDIR /usr/src/
+
+RUN make
+
+RUN make clean

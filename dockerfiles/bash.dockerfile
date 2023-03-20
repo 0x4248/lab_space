@@ -7,9 +7,12 @@ FROM ubuntu:latest
 COPY lab_spaces/bash /usr/src/
 
 RUN apt-get update && apt-get install -y \
+    make \
     git \
     curl \
     nano \ 
     vim
 
 WORKDIR /usr/src/
+
+RUN make
