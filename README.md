@@ -22,37 +22,37 @@ Each of the images comes with tools such as:
 ### C
 To run the C image, use the following command:
 ```bash
-docker pull ghcr.io/awesomelewis2007/lab_space_c:latest
+docker run -it ghcr.io/awesomelewis2007/lab_space_c:latest
 ```
 
 ### C++
 To run the C++ image, use the following command:
 ```bash
-docker pull ghcr.io/awesomelewis2007/lab_space_cpp:latest
+docker run -it ghcr.io/awesomelewis2007/lab_space_cpp:latest
 ```
 
 ### Python
 To run the Python image, use the following command:
 ```bash
-docker pull ghcr.io/awesomelewis2007/lab_space_python:latest
+docker run -it ghcr.io/awesomelewis2007/lab_space_python:latest
 ```
 
 ### Rust
 To run the Rust image, use the following command:
 ```bash
-docker pull ghcr.io/awesomelewis2007/lab_space_rust:latest
+docker run -it ghcr.io/awesomelewis2007/lab_space_rust:latest
 ```
 
 ### Bash
 To run the Bash image, use the following command:
 ```bash
-docker pull ghcr.io/awesomelewis2007/lab_space_bash:latest
+docker run -it ghcr.io/awesomelewis2007/lab_space_bash:latest
 ```
 
 ### Nodejs
 To run the Nodejs image, use the following command:
 ```bash
-docker pull ghcr.io/awesomelewis2007/lab_space_nodejs:latest
+docker run -it ghcr.io/awesomelewis2007/lab_space_nodejs:latest
 ```
 
 ## 📦 Dependencies
