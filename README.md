@@ -11,6 +11,7 @@ A collection of docker images for quick testing of code.
 - `Rust`
 - `Bash`
 - `Nodejs`
+- `Typescript`
 
 Each of the images comes with tools such as:
 - `git`

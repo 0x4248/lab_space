@@ -31,6 +31,11 @@ jobs:
           docker build -f dockerfiles/nodejs.dockerfile . --tag ghcr.io/awesomelewis2007/lab_space_nodejs:latest
           docker run ghcr.io/awesomelewis2007/lab_space_nodejs:latest
           docker push ghcr.io/awesomelewis2007/lab_space_nodejs:latest
+      - name: Build docker typescript image
+        run: |
+          docker build -f dockerfiles/typescript.dockerfile . --tag ghcr.io/awesomelewis2007/lab_space_typescript:latest
+          docker run ghcr.io/awesomelewis2007/lab_space_typescript:latest
+          docker push ghcr.io/awesomelewis2007/lab_space_typescript:latest
       - name: Build docker python image
         run: |
           docker build -f dockerfiles/python.dockerfile . --tag ghcr.io/awesomelewis2007/lab_space_python:latest
