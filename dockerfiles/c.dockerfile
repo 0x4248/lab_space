@@ -15,6 +15,7 @@ COPY lab_spaces/c /usr/src/
 RUN apk update && apk add --no-cache \
     bash \
     gcc \
+    g++ \
     libc-dev \
     make \
     git \
