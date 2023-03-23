@@ -15,7 +15,7 @@ COPY lab_spaces/python /usr/src/
 RUN apk update && apk add --no-cache \
     bash \
     python3 \
-    python3-pip \
+    py3-pip \
     git \
     curl \
     make \
