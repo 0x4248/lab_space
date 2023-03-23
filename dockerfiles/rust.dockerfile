@@ -2,11 +2,11 @@
 # A set of docker containers to experiment code
 # Github: https://github.com/awesomelewis2007/lab_space
 
-FROM rust:latest
+FROM alpine:latest
 
 COPY lab_spaces/rust /usr/src/
 
-RUN apt-get update && apt-get install -y \
+RUN apk update && apk add --no-cache \
     make \
     git \
     curl \

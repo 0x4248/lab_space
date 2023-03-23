@@ -2,11 +2,11 @@
 # A set of docker containers to experiment code
 # Github: https://github.com/awesomelewis2007/lab_space
 
-FROM ubuntu:latest
+FROM alpine:latest
 
 COPY lab_spaces/python /usr/src/
 
-RUN apt-get update && apt-get install -y \
+RUN apk update && apk add --no-cache \
     python3 \
     python3-pip \
     git \
