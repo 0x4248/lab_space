@@ -11,6 +11,11 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.DOCKER_TOKEN }}
+      - name: Build docker blank image
+        run: |
+          docker build -f dockerfiles/blank.dockerfile . --tag ghcr.io/awesomelewis2007/lab_space_blank:latest
+          docker run ghcr.io/awesomelewis2007/lab_space_blank:latest
+          docker push ghcr.io/awesomelewis2007/lab_space_blank:latest
       - name: Build docker bash image
         run: |
           docker build -f dockerfiles/bash.dockerfile . --tag ghcr.io/awesomelewis2007/lab_space_bash:latest
