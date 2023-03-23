@@ -13,6 +13,7 @@ LABEL version="1.0.0" \
 COPY lab_spaces/typescript /usr/src/
 
 RUN apk update && apk add --no-cache \
+    bash \
     nodejs \
     npm \
     git \

@@ -13,11 +13,21 @@ LABEL version="1.0.0" \
 COPY lab_spaces/rust /usr/src/
 
 RUN apk update && apk add --no-cache \
+    gcc \
+    bash \
     make \
     git \
     curl \
     nano \ 
     vim
+
+RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs > rustup.sh
+
+RUN chmod +x rustup.sh
+
+RUN ./rustup.sh -y
+
+ENV PATH="/root/.cargo/bin:${PATH}"
 
 WORKDIR /usr/src/
 
