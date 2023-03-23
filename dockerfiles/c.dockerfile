@@ -4,6 +4,12 @@
 
 FROM alpine:latest
 
+LABEL version="1.0.0" \
+    name="lab_space_c" \
+    language="C" \
+    description="A set of docker containers to experiment code" \
+    github="https://github.com/awesomelewis2007/lab_space"
+
 COPY lab_spaces/c /usr/src/
 
 RUN apk update && apk add --no-cache \
