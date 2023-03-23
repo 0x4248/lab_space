@@ -13,6 +13,8 @@ A collection of docker images for quick testing of code.
 - `Nodejs`
 - `Typescript`
 
+There is also a blank image that can be used to do anything you want.
+
 Each of the images comes with tools such as:
 - `git`
 - `curl`
@@ -54,6 +56,18 @@ docker run -it ghcr.io/awesomelewis2007/lab_space_bash:latest
 To run the Nodejs image, use the following command:
 ```bash
 docker run -it ghcr.io/awesomelewis2007/lab_space_nodejs:latest
+```
+
+### Typescript
+To run the Typescript image, use the following command:
+```bash
+docker run -it ghcr.io/awesomelewis2007/lab_space_typescript:latest
+```
+
+### Blank
+To run the blank image, use the following command:
+```bash
+docker run -it ghcr.io/awesomelewis2007/lab_space_blank:latest
 ```
 
 ## 📦 Dependencies
