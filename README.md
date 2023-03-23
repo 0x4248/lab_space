@@ -1,6 +1,10 @@
 # 🧪 Lab space
 A collection of docker images for quick testing of code.
 
+
+## 📺 Demo
+Here is a example of the bash image in action:
+
 <img src="https://github.com/awesomelewis2007/lab_space/blob/master/demo.gif" width=500>
 
 ## 🗃️ Docker images
