@@ -56,3 +56,8 @@ jobs:
           docker build -f dockerfiles/go.dockerfile . --tag ghcr.io/awesomelewis2007/lab_space_go:latest
           docker run ghcr.io/awesomelewis2007/lab_space_go:latest
           docker push ghcr.io/awesomelewis2007/lab_space_go:latest
+      - name: Build docker elixir image
+        run: |
+          docker build -f dockerfiles/elixir.dockerfile . --tag ghcr.io/awesomelewis2007/lab_space_elixir:latest
+          docker run ghcr.io/awesomelewis2007/lab_space_elixir:latest
+          docker push ghcr.io/awesomelewis2007/lab_space_elixir:latest
