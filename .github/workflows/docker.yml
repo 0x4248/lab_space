@@ -51,3 +51,8 @@ jobs:
           docker build -f dockerfiles/rust.dockerfile . --tag ghcr.io/awesomelewis2007/lab_space_rust:latest
           docker run ghcr.io/awesomelewis2007/lab_space_rust:latest
           docker push ghcr.io/awesomelewis2007/lab_space_rust:latest
+      - name: Build docker go image
+        run: |
+          docker build -f dockerfiles/go.dockerfile . --tag ghcr.io/awesomelewis2007/lab_space_go:latest
+          docker run ghcr.io/awesomelewis2007/lab_space_go:latest
+          docker push ghcr.io/awesomelewis2007/lab_space_go:latest
