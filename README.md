@@ -1,6 +1,7 @@
 # 🧪 Lab space
 A collection of docker images for quick testing of code.
 
+![Icons](https://skillicons.dev/icons?i=c,cpp,python,bash,nodejs,typescript,rust,go,elixir)
 
 ## 📺 Demo
 Here is a example of the bash image in action:
@@ -16,6 +17,8 @@ Here is a example of the bash image in action:
 - `Bash`
 - `Nodejs`
 - `Typescript`
+- `Go`
+- `Elixir`
 
 There is also a blank image that can be used to do anything you want.
 
@@ -66,6 +69,18 @@ docker run -it ghcr.io/awesomelewis2007/lab_space_nodejs:latest
 To run the Typescript image, use the following command:
 ```bash
 docker run -it ghcr.io/awesomelewis2007/lab_space_typescript:latest
+```
+
+### Go
+To run the Go image, use the following command:
+```bash
+docker run -it ghcr.io/awesomelewis2007/lab_space_go:latest
+```
+
+### Elixir
+To run the Elixir image, use the following command:
+```bash
+docker run -it ghcr.io/awesomelewis2007/lab_space_elixir:latest
 ```
 
 ### Blank
