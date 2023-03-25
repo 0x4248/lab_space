@@ -19,6 +19,7 @@ RUN apk update && apk add --no-cache \
     curl \
     nano \ 
     gfortran \
+    build-base \
     vim
 
 WORKDIR /usr/src/
