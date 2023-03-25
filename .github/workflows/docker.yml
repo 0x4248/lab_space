@@ -66,3 +66,9 @@ jobs:
           docker build -f dockerfiles/assembly.dockerfile . --tag ghcr.io/awesomelewis2007/lab_space_assembly:latest
           docker run ghcr.io/awesomelewis2007/lab_space_assembly:latest
           docker push ghcr.io/awesomelewis2007/lab_space_assembly:latest
+      - name: Build docker fortran image
+        run: |
+          docker build -f dockerfiles/fortran.dockerfile . --tag ghcr.io/awesomelewis2007/lab_space_fortran:latest
+          docker run ghcr.io/awesomelewis2007/lab_space_fortran:latest
+          docker push ghcr.io/awesomelewis2007/lab_space_fortran:latest
+          
