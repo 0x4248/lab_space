@@ -5,7 +5,7 @@
 FROM alpine:latest
 
 LABEL version="1.0.0" \
-    name="lab_space_assmbly" \
+    name="lab_space_assembly" \
     language="Assembly" \
     description="A set of docker containers to experiment code" \
     github="https://github.com/awesomelewis2007/lab_space"
