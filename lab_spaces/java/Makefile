@@ -21,8 +21,7 @@ compile:
 	$(JAVAC) $(FLAGS) $(SRC)/$(MAIN)
 
 run:
-	cd $(SRC)
-	java Main
+	bash ./run.sh
 
 clean:
 	rm -rf $(SRC)/*.class
