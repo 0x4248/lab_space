@@ -1,7 +1,7 @@
 name: publish
 on: [push]
 jobs:
-  publish-docker-image:
+  publish-blank-image:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -16,64 +16,198 @@ jobs:
           docker build -f dockerfiles/blank.dockerfile . --tag ghcr.io/awesomelewis2007/lab_space_blank:latest
           docker run ghcr.io/awesomelewis2007/lab_space_blank:latest
           docker push ghcr.io/awesomelewis2007/lab_space_blank:latest
+  publish-bash-image:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.DOCKER_TOKEN }}
       - name: Build docker bash image
         run: |
           docker build -f dockerfiles/bash.dockerfile . --tag ghcr.io/awesomelewis2007/lab_space_bash:latest
           docker run ghcr.io/awesomelewis2007/lab_space_bash:latest
           docker push ghcr.io/awesomelewis2007/lab_space_bash:latest
+  publish-c-image:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.DOCKER_TOKEN }}
       - name: Build docker c image
         run: |
           docker build -f dockerfiles/c.dockerfile . --tag ghcr.io/awesomelewis2007/lab_space_c:latest
           docker run ghcr.io/awesomelewis2007/lab_space_c:latest
           docker push ghcr.io/awesomelewis2007/lab_space_c:latest
+  publish-cpp-image:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.DOCKER_TOKEN }}
       - name: Build docker cpp image
         run: |
           docker build -f dockerfiles/cpp.dockerfile . --tag ghcr.io/awesomelewis2007/lab_space_cpp:latest
           docker run ghcr.io/awesomelewis2007/lab_space_cpp:latest
           docker push ghcr.io/awesomelewis2007/lab_space_cpp:latest
+  publish-nodejs-image:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.DOCKER_TOKEN }}
       - name: Build docker nodejs image
         run: |
           docker build -f dockerfiles/nodejs.dockerfile . --tag ghcr.io/awesomelewis2007/lab_space_nodejs:latest
           docker run ghcr.io/awesomelewis2007/lab_space_nodejs:latest
           docker push ghcr.io/awesomelewis2007/lab_space_nodejs:latest
+  publish-typescript-image:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.DOCKER_TOKEN }}
       - name: Build docker typescript image
         run: |
           docker build -f dockerfiles/typescript.dockerfile . --tag ghcr.io/awesomelewis2007/lab_space_typescript:latest
           docker run ghcr.io/awesomelewis2007/lab_space_typescript:latest
           docker push ghcr.io/awesomelewis2007/lab_space_typescript:latest
+  publish-python-image:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.DOCKER_TOKEN }}
       - name: Build docker python image
         run: |
           docker build -f dockerfiles/python.dockerfile . --tag ghcr.io/awesomelewis2007/lab_space_python:latest
           docker run ghcr.io/awesomelewis2007/lab_space_python:latest
           docker push ghcr.io/awesomelewis2007/lab_space_python:latest
+  publish-rust-image:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.DOCKER_TOKEN }}
       - name: Build docker rust image
         run: |
           docker build -f dockerfiles/rust.dockerfile . --tag ghcr.io/awesomelewis2007/lab_space_rust:latest
           docker run ghcr.io/awesomelewis2007/lab_space_rust:latest
           docker push ghcr.io/awesomelewis2007/lab_space_rust:latest
+  publish-go-image:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.DOCKER_TOKEN }}
       - name: Build docker go image
         run: |
           docker build -f dockerfiles/go.dockerfile . --tag ghcr.io/awesomelewis2007/lab_space_go:latest
           docker run ghcr.io/awesomelewis2007/lab_space_go:latest
           docker push ghcr.io/awesomelewis2007/lab_space_go:latest
+  publish-elixir-image:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.DOCKER_TOKEN }}
       - name: Build docker elixir image
         run: |
           docker build -f dockerfiles/elixir.dockerfile . --tag ghcr.io/awesomelewis2007/lab_space_elixir:latest
           docker run ghcr.io/awesomelewis2007/lab_space_elixir:latest
           docker push ghcr.io/awesomelewis2007/lab_space_elixir:latest
+  publish-assembly-image:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.DOCKER_TOKEN }}
       - name: Build docker assembly image
         run: |
           docker build -f dockerfiles/assembly.dockerfile . --tag ghcr.io/awesomelewis2007/lab_space_assembly:latest
           docker run ghcr.io/awesomelewis2007/lab_space_assembly:latest
           docker push ghcr.io/awesomelewis2007/lab_space_assembly:latest
+  publish-fortran-image:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.DOCKER_TOKEN }}
       - name: Build docker fortran image
         run: |
           docker build -f dockerfiles/fortran.dockerfile . --tag ghcr.io/awesomelewis2007/lab_space_fortran:latest
           docker run ghcr.io/awesomelewis2007/lab_space_fortran:latest
           docker push ghcr.io/awesomelewis2007/lab_space_fortran:latest
+  publish-java-image:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.DOCKER_TOKEN }}
       - name: Build docker java image
         run: |
           docker build -f dockerfiles/java.dockerfile . --tag ghcr.io/awesomelewis2007/lab_space_java:latest
           docker run ghcr.io/awesomelewis2007/lab_space_java:latest
           docker push ghcr.io/awesomelewis2007/lab_space_java:latest
-      
+  publish-r-image:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.DOCKER_TOKEN }}
+      - name: Build docker r image
+        run: |
+          docker build -f dockerfiles/r.dockerfile . --tag ghcr.io/awesomelewis2007/lab_space_r:latest
+          docker run ghcr.io/awesomelewis2007/lab_space_r:latest
+          docker push ghcr.io/awesomelewis2007/lab_space_r:latest
