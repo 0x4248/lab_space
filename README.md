@@ -18,6 +18,9 @@ Here is a example of the bash image in action:
 - `Go`
 - `Elixir`
 - `Assembly`
+- `Fortran`
+- `Java`
+- `R`
 
 There is also a blank image that can be used to do anything you want.
 
@@ -80,6 +83,30 @@ docker run -it ghcr.io/awesomelewis2007/lab_space_go:latest
 To run the Elixir image, use the following command:
 ```bash
 docker run -it ghcr.io/awesomelewis2007/lab_space_elixir:latest
+```
+
+## Assembly
+To run the Assembly image, use the following command:
+```bash
+docker run -it ghcr.io/awesomelewis2007/lab_space_assembly:latest
+```
+
+### Fortran
+To run the Fortran image, use the following command:
+```bash
+docker run -it ghcr.io/awesomelewis2007/lab_space_fortran:latest
+```
+
+### Java
+To run the Java image, use the following command:
+```bash
+docker run -it ghcr.io/awesomelewis2007/lab_space_java:latest
+```
+
+### R
+To run the R image, use the following command:
+```bash
+docker run -it ghcr.io/awesomelewis2007/lab_space_r:latest
 ```
 
 ### Blank
