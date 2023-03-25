@@ -1,8 +1,6 @@
 # 🧪 Lab space
 A collection of docker images for quick testing of code.
 
-![Icons](https://skillicons.dev/icons?i=c,cpp,python,bash,nodejs,typescript,rust,go,elixir)
-
 ## 📺 Demo
 Here is a example of the bash image in action:
 
@@ -19,6 +17,7 @@ Here is a example of the bash image in action:
 - `Typescript`
 - `Go`
 - `Elixir`
+- `Assembly`
 
 There is also a blank image that can be used to do anything you want.
 
