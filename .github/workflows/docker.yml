@@ -226,3 +226,18 @@ jobs:
           docker build -f dockerfiles/d.dockerfile . --tag ghcr.io/awesomelewis2007/lab_space_d:latest
           docker run ghcr.io/awesomelewis2007/lab_space_d:latest
           docker push ghcr.io/awesomelewis2007/lab_space_d:latest
+  publish-lisp-image:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.DOCKER_TOKEN }}
+      - name: Build docker lisp image
+        run: |
+          docker build -f dockerfiles/lisp.dockerfile . --tag ghcr.io/awesomelewis2007/lab_space_lisp:latest
+          docker run ghcr.io/awesomelewis2007/lab_space_lisp:latest
+          docker push ghcr.io/awesomelewis2007/lab_space_lisp:latest
