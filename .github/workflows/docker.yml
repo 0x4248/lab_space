@@ -256,3 +256,18 @@ jobs:
           docker build -f dockerfiles/ruby.dockerfile . --tag ghcr.io/awesomelewis2007/lab_space_ruby:latest
           docker run ghcr.io/awesomelewis2007/lab_space_ruby:latest
           docker push ghcr.io/awesomelewis2007/lab_space_ruby:latest
+  publish-lua-image:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.DOCKER_TOKEN }}
+      - name: Build docker lua image
+        run: |
+          docker build -f dockerfiles/lua.dockerfile . --tag ghcr.io/awesomelewis2007/lab_space_lua:latest
+          docker run ghcr.io/awesomelewis2007/lab_space_lua:latest
+          docker push ghcr.io/awesomelewis2007/lab_space_lua:latest
