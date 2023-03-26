@@ -21,6 +21,8 @@ Here is a example of the bash image in action:
 - `Fortran`
 - `Java`
 - `R`
+- `D`
+- `Lisp`
 
 There is also a blank image that can be used to do anything you want.
 
