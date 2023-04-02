@@ -10,6 +10,12 @@ LABEL version="1.0.0" \
     description="A set of docker containers to experiment code" \
     github="https://github.com/awesomelewis2007/lab_space"
 
+COPY configs/root /root
+
+RUN rm -rf /etc/profile.d/*
+COPY configs/profile.d /etc/profile.d
+RUN sed -i '1s/^/echo "Welcome to Assembly Lab Space!"/' /etc/profile.d/welcome.sh
+
 COPY containers/assembly /usr/src/
 
 RUN apk update && apk add --no-cache \
@@ -24,3 +30,5 @@ RUN apk update && apk add --no-cache \
 WORKDIR /usr/src/
 
 RUN make
+
+ENTRYPOINT [ "bash"]

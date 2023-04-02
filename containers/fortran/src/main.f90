@@ -4,6 +4,6 @@
 ! Github: https://github.com/awesomelewis2007/lab_space
 
 program main
-  implicit none
-  write(*,*) 'Hello, World!'
+	implicit none
+	write(*,*) 'Hello, World!'
 end program main
