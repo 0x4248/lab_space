@@ -10,7 +10,7 @@ LABEL version="1.0.0" \
     description="A set of docker containers to experiment code" \
     github="https://github.com/awesomelewis2007/lab_space"
 
-COPY lab_spaces/blank /usr/src/
+COPY containers/blank /usr/src/
 
 RUN apk update && apk add --no-cache \
     bash \
