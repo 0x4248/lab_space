@@ -40,3 +40,5 @@ WORKDIR /usr/src/
 RUN cargo run
 
 RUN rm -rf target
+
+ENTRYPOINT [ "bash"]

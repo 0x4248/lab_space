@@ -33,3 +33,5 @@ RUN npm install -g typescript
 RUN npx tsc --init
 
 WORKDIR /usr/src/
+
+ENTRYPOINT [ "bash"]

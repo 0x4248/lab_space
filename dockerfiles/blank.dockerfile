@@ -27,3 +27,5 @@ RUN apk update && apk add --no-cache \
     vim
 
 WORKDIR /usr/src/
+
+ENTRYPOINT [ "bash"]

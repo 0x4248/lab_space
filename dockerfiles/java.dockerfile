@@ -30,3 +30,5 @@ RUN apk update && apk add --no-cache \
 WORKDIR /usr/src/
 
 RUN make
+
+ENTRYPOINT [ "bash"]

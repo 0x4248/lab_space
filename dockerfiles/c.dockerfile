@@ -33,3 +33,5 @@ WORKDIR /usr/src/
 RUN make
 
 RUN make clean
+
+ENTRYPOINT [ "bash"]
