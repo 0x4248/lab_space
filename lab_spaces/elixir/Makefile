@@ -11,3 +11,12 @@ all: run
 
 run:
 	elixir $(SRC)/$(MAIN)
+
+edit:
+	nano $(SRC)/$(MAIN)
+
+edit_vi:
+	vi $(SRC)/$(MAIN)
+
+edit_vim:
+	vim $(SRC)/ .

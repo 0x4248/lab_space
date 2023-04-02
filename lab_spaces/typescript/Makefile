@@ -19,3 +19,12 @@ all: run
 run:
 	$(NPX) $(TSC) $(SRC)/$(MAIN) --outDir $(OUTPUT)
 	node $(OUTPUT)/$(OUTPUT_FILE)
+
+edit:
+	nano $(SRC)/$(MAIN)
+
+edit_vi:
+	vi $(SRC)/$(MAIN)
+
+edit_vim:
+	vim $(SRC)/ .

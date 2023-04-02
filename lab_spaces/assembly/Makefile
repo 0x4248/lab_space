@@ -37,3 +37,12 @@ init:
 
 clean:
 	rm -rf $(BIN)
+
+edit:
+	nano $(SRC)/$(MAIN)
+
+edit_vi:
+	vi $(SRC)/$(MAIN)
+
+edit_vim:
+	vim $(SRC)/ .

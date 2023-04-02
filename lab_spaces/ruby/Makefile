@@ -16,3 +16,12 @@ all: run
 
 run:
 	$(RUBY) $(SRC)/$(MAIN)
+
+edit:
+	nano $(SRC)/$(MAIN)
+
+edit_vi:
+	vi $(SRC)/$(MAIN)
+
+edit_vim:
+	vim $(SRC)/ .

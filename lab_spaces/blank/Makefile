@@ -23,4 +23,3 @@ clean:
 
 init:
 	mkdir -p $(OUTPUT)
-

@@ -18,6 +18,7 @@ STD = c++17
 
 # Folder locations
 SRC = src
+MAIN = main.cpp
 BIN = bin
 LIB = lib
 INCLUDE = include/
@@ -38,3 +39,11 @@ run:
 clean:
 	rm -rf bin
 
+edit:
+	nano $(SRC)/$(MAIN)
+
+edit_vi:
+	vi $(SRC)/$(MAIN)
+
+edit_vim:
+	vim $(SRC)/ .
