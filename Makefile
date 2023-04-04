@@ -23,3 +23,4 @@ build:
 	$(DOCKER) build -f $(SRC)/ruby.dockerfile . -t lab_space_ruby
 	$(DOCKER) build -f $(SRC)/rust.dockerfile . -t lab_space_rust
 	$(DOCKER) build -f $(SRC)/typescript.dockerfile . -t lab_space_typescriptc
+	$(DOCKER) build -f $(SRC)/php.dockerfile . -t lab_space_php

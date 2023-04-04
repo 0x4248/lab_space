@@ -23,6 +23,7 @@ Here is a example of the bash image in action:
 - `R`
 - `D`
 - `Lisp`
+- `PHP`
 
 There is also a blank image that can be used to do anything you want.
 
@@ -109,6 +110,24 @@ docker run -it ghcr.io/awesomelewis2007/lab_space_java:latest
 To run the R image, use the following command:
 ```bash
 docker run -it ghcr.io/awesomelewis2007/lab_space_r:latest
+```
+
+### D
+To run the D image, use the following command:
+```bash
+docker run -it ghcr.io/awesomelewis2007/lab_space_d:latest
+```
+
+### Lisp
+To run the Lisp image, use the following command:
+```bash
+docker run -it ghcr.io/awesomelewis2007/lab_space_lisp:latest
+```
+
+### PHP
+To run the PHP image, use the following command:
+```bash
+docker run -it ghcr.io/awesomelewis2007/lab_space_php:latest
 ```
 
 ### Blank
