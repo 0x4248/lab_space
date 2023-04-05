@@ -5,17 +5,24 @@
 # Targets:
 # make - run code
 
-HASKELL = ghs
+HASKELL = ghc
 FLAGS =
 
 # Folder locations
 SRC = src
 MAIN = main.hs
 
+BIN = bin
+OUTPUT = main
+
 all: run
 
+init:
+	mkdir -p $(BIN)
+
 run:
-	$(HASKELL) $(FLAGS) $(SRC)/$(MAIN)
+	$(HASKELL) $(FLAGS) $(SRC)/$(MAIN) -o $(BIN)/$(OUTPUT)
+	./$(BIN)/$(OUTPUT)
 
 edit:
 	nano $(SRC)/$(MAIN)
