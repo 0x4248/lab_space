@@ -24,6 +24,7 @@ Here is a example of the bash image in action:
 - `D`
 - `Lisp`
 - `PHP`
+- `Haskell`
 
 There is also a blank image that can be used to do anything you want.
 
@@ -128,6 +129,12 @@ docker run -it ghcr.io/awesomelewis2007/lab_space_lisp:latest
 To run the PHP image, use the following command:
 ```bash
 docker run -it ghcr.io/awesomelewis2007/lab_space_php:latest
+```
+
+### Haskell
+To run the Haskell image, use the following command:
+```bash
+docker run -it ghcr.io/awesomelewis2007/lab_space_haskell:latest
 ```
 
 ### Blank
