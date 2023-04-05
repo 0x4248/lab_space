@@ -1,5 +1,5 @@
-# Python lab space
-Welcome to this lab space. Here you can test your python code.
+# PHP lab space
+Welcome to this lab space. Here you can test your php code.
 
 ## File structure
 The file structure is as follows:
@@ -8,10 +8,10 @@ The file structure is as follows:
 ├── Makefile
 ├── README.md
 └── src
-    └── main.py
+    └── index.php
 ```
 
-The main file is `src/main.py`. You can edit this file to test your code.
+The main file is `src/index.php`. You can edit this file to test your code.
 
 ## Running
 To run the code, you can use the `make` command. This will run the code.
