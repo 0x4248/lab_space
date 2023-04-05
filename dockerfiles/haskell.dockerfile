@@ -24,6 +24,7 @@ RUN apk update && apk add --no-cache \
     git \
     curl \
     nano \ 
+    musl-dev \
     ghc \
     vim
 
