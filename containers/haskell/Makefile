@@ -15,7 +15,7 @@ MAIN = main.hs
 BIN = bin
 OUTPUT = main
 
-all: run
+all: init run
 
 init:
 	mkdir -p $(BIN)
