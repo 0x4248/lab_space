@@ -24,7 +24,7 @@ RUN apk update && apk add --no-cache \
     git \
     curl \
     nano \ 
-    ghs \
+    ghc \
     vim
 
 WORKDIR /usr/src/
