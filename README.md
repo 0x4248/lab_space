@@ -25,6 +25,7 @@ Here is a example of the bash image in action:
 - `Lisp`
 - `PHP`
 - `Haskell`
+- `F#`
 
 There is also a blank image that can be used to do anything you want.
 
@@ -135,6 +136,12 @@ docker run -it ghcr.io/awesomelewis2007/lab_space_php:latest
 To run the Haskell image, use the following command:
 ```bash
 docker run -it ghcr.io/awesomelewis2007/lab_space_haskell:latest
+```
+
+### F#
+To run the F# image, use the following command:
+```bash
+docker run -it ghcr.io/awesomelewis2007/lab_space_f_sharp:latest
 ```
 
 ### Blank

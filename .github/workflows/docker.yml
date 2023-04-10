@@ -301,3 +301,18 @@ jobs:
           docker build -f dockerfiles/haskell.dockerfile . --tag ghcr.io/awesomelewis2007/lab_space_haskell:latest
           docker run ghcr.io/awesomelewis2007/lab_space_haskell:latest
           docker push ghcr.io/awesomelewis2007/lab_space_haskell:latest
+  publish-f_sharp-image:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.DOCKER_TOKEN }}
+      - name: Build docker f_sharp image
+        run: |
+          docker build -f dockerfiles/f_sharp.dockerfile . --tag ghcr.io/awesomelewis2007/lab_space_f_sharp:latest
+          docker run ghcr.io/awesomelewis2007/lab_space_f_sharp:latest
+          docker push ghcr.io/awesomelewis2007/lab_space_f_sharp:latest
