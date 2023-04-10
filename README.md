@@ -17,7 +17,7 @@ Here is a example of the bash image in action:
 - `Typescript`
 - `Go`
 - `Elixir`
-- `Assembly`
+- `Assembly` <-- x86_64
 - `Fortran`
 - `Java`
 - `R`
