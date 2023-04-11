@@ -12,6 +12,9 @@ LABEL version="1.0.0" \
 
 COPY configs/root /root
 
+COPY configs/bin /bin
+RUN chmod +x /bin/labspace_help
+
 RUN rm -rf /etc/profile.d/*
 COPY configs/profile.d /etc/profile.d
 RUN sed -i '1s/^/echo "Welcome to Assembly Lab Space!"/' /etc/profile.d/welcome.sh
@@ -31,4 +34,4 @@ WORKDIR /usr/src/
 
 RUN make
 
-ENTRYPOINT [ "bash"]
+ENTRYPOINT ["bash"]

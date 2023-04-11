@@ -12,6 +12,9 @@ LABEL version="1.0.0" \
 
 COPY configs/root /root
 
+COPY configs/bin /bin
+RUN chmod +x /bin/labspace_help
+
 RUN rm -rf /etc/profile.d/*
 COPY configs/profile.d /etc/profile.d
 RUN sed -i '1s/^/echo "Welcome to Rust Lab Space!"/' /etc/profile.d/welcome.sh
@@ -41,4 +44,4 @@ RUN cargo run
 
 RUN rm -rf target
 
-ENTRYPOINT [ "bash"]
+ENTRYPOINT ["bash"]

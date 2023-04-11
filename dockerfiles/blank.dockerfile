@@ -12,6 +12,9 @@ LABEL version="1.0.0" \
 
 COPY configs/root /root
 
+COPY configs/bin /bin
+RUN chmod +x /bin/labspace_help
+
 RUN rm -rf /etc/profile.d/*
 COPY configs/profile.d /etc/profile.d
 RUN sed -i '1s/^/echo "Welcome to Blank Lab Space!"/' /etc/profile.d/welcome.sh
@@ -28,4 +31,4 @@ RUN apk update && apk add --no-cache \
 
 WORKDIR /usr/src/
 
-ENTRYPOINT [ "bash"]
+ENTRYPOINT ["bash"]
