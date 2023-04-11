@@ -8,26 +8,26 @@ Here is a example of the bash image in action:
 
 ## 🗃️ Docker images
 
-- `C`
-- `C++`
-- `Python`
-- `Rust`
-- `Bash`
-- `Nodejs`
-- `Typescript`
-- `Go`
-- `Elixir`
-- `Assembly`
-- `Fortran`
-- `Java`
-- `R`
-- `D`
-- `Lisp`
-- `PHP`
-- `Haskell`
-- `F#`
+- [C](#c)
+- [C++](#c-1)
+- [Python](#python)
+- [Rust](#rust)
+- [Bash](#bash)
+- [Nodejs](#nodejs)
+- [Typescript](#typescript)
+- [Go](#go)
+- [Elixir](#elixir)
+- [Assembly](#assembly)
+- [Fortran](#fortran)
+- [Java](#java)
+- [R](#r)
+- [D](#d)
+- [Lisp](#lisp)
+- [PHP](#php)
+- [Haskell](#haskell)
+- [F#](#f-1)
 
-There is also a blank image that can be used to do anything you want.
+There is also a [blank](#blank) image which has no language configured.
 
 Each of the images comes with tools such as:
 - `git`
@@ -35,6 +35,7 @@ Each of the images comes with tools such as:
 - `make`
 - `nano`
 - `vim`
+- `bash`
 
 ### C
 To run the C image, use the following command:
