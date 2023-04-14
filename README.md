@@ -39,6 +39,8 @@ Each of the images comes with tools such as:
 - `vim`
 - `bash`
 
+When you run the image, a bash shell will be opened in the `/usr/src` directory. If you get stuck, you can run `labspace_help` to get help.
+
 ### C
 To run the C image, use the following command:
 ```bash
