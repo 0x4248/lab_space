@@ -3,9 +3,11 @@
 # Github: https://github.com/awesomelewis2007/lab_space
 
 COMMAND =
-INPUT = 
 OUTPUT =
 OUTPUT_FILE =
+SRC = src
+MAIN = 
+
 
 all: init build run
 
@@ -13,7 +15,7 @@ help:
 	@echo "For help please see the README.md file"
 
 build:
-	$(COMMAND) $(INPUT) $(OUTPUT)/$(OUTPUT_FILE)
+	$(COMMAND) $(SRC)/$(MAIN) $(OUTPUT)/$(OUTPUT_FILE)
 
 run:
 	./$(OUTPUT)/$(OUTPUT_FILE)
@@ -23,3 +25,12 @@ clean:
 
 init:
 	mkdir -p $(OUTPUT)
+
+edit:
+	nano $(SRC)/$(MAIN)
+
+edit_vi:
+	vi $(SRC)/$(MAIN)
+
+edit_vim:
+	vim $(SRC)/ .

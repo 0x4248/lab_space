@@ -1,0 +1,4 @@
+!#/bin/sh
+echo "Welcome to the labspace help"
+cat /usr/src/README.md
+echo ""
