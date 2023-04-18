@@ -1,5 +1,5 @@
 # 🧪 Lab space
-A collection of docker images for quick testing of code.
+A collection of pre-configured docker images for quick testing of code.
 
 **Check out:** The [CLI](https://www.github.com/awesomelewis2007/lab_space_cli) for running the images quicker and easier.
 
