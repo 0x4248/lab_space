@@ -17,7 +17,7 @@ RUN chmod +x /bin/labspace_help
 
 RUN rm -rf /etc/profile.d/*
 COPY configs/profile.d /etc/profile.d
-RUN sed -i '1s/^/echo "Welcome to Bash Lab Space!"/' /etc/profile.d/welcome.sh
+RUN sed -i '1s/^/echo "Welcome to PHP Lab Space!"/' /etc/profile.d/welcome.sh
 
 COPY containers/php /usr/src/
 
