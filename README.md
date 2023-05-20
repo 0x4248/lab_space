@@ -254,4 +254,4 @@ lab_space run blank
 - [Docker](https://www.docker.com/)
 
 ## 📝 License
-This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the GNU General Public License v3.0 - see the [LICENCE](LICENCE) file for details.
