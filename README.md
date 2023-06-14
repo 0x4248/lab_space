@@ -140,7 +140,7 @@ Or use out CLI tool to run the image:
 lab_space run elixir
 ```
 
-## Assembly
+### Assembly
 To run the Assembly image, use the following command:
 ```bash
 docker run -it --rm ghcr.io/awesomelewis2007/lab_space_assembly:latest
