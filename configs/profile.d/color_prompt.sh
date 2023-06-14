@@ -1,9 +1,9 @@
 _normal=$'\e[0m'
 if [ "$USER" = root ]; then
-   _color=$'\e[1;31m'
+   _color=$'\e[1;31m' # red
    _symbol='#'
 else
-   _color=$'\e[1;32m'
+   _color=$'\e[1;32m' # green
    _symbol='$'
 fi
 if [ -n "$ZSH_VERSION" ]; then

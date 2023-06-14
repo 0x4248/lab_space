@@ -1,5 +1,9 @@
 !#/bin/sh
 echo "Welcome to the labspace help"
 echo "Here is the guide for this labspace"
-cat /usr/src/README.md
+if [ -f /usr/src/README.md ]; then
+    cat /usr/src/README.md
+else
+    echo "No README.md file found"
+fi
 echo ""
