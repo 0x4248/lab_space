@@ -1,3 +1,9 @@
+# Lab Space 
+# A collection of pre-configured docker images for quick testing of code.
+# Github: https://www.github.com/awesomelewis2007/lab_space
+# Licence: GNU General Public License v3.0
+# By: Lewis Evans
+
 _normal=$'\e[0m'
 if [ "$USER" = root ]; then
    _color=$'\e[1;31m' # red
