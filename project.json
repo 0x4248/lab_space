@@ -1,0 +1,23 @@
+{
+    "name": "lab_space",
+    "description": "A collection of pre-configured docker images for quick testing of code.",
+    "version": "",
+    "main_file": "none",
+    "author": "Lewis Evans",
+    "license": "none",
+    "url": "https://www.github.com/awesomelewis2007/lab_space",
+    "email": "none",
+    "languages": [
+        "shell",
+        "go",
+        "javascript",
+        "typescript",
+        "ruby",
+        "c++",
+        "python",
+        "c",
+        "php",
+        "java"
+    ],
+    "actions": {}
+}
