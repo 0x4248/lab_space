@@ -1,6 +1,6 @@
 # Lab space Makefile
 # A set of docker containers to experiment code
-# Github: https://github.com/awesomelewis2007/lab_space
+# Github: https://github.com/lewisevans2007/lab_space
 
 DOCKER = docker
 SRC = dockerfiles

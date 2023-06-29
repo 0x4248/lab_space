@@ -1,6 +1,6 @@
 # Lab space for Haskell
 # A set of docker containers to experiment code
-# Github: https://github.com/awesomelewis2007/lab_space
+# Github: https://github.com/lewisevans2007/lab_space
 # Licence: GNU General Public License v3.0
 # By: Lewis Evans
 
@@ -10,7 +10,7 @@ LABEL version="1.0.0" \
     name="lab_space_haskell" \
     language="Haskell" \
     description="A set of docker containers to experiment code" \
-    github="https://github.com/awesomelewis2007/lab_space"
+    github="https://github.com/lewisevans2007/lab_space"
 
 COPY configs/root /root
 

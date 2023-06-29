@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/awesomelewis2007/lab_space.git"
+    "url": "git+https://github.com/lewisevans2007/lab_space.git"
   },
   "author": "",
   "license": "GNUv3",
   "bugs": {
-    "url": "https://github.com/awesomelewis2007/lab_space/issues"
+    "url": "https://github.com/lewisevans2007/lab_space/issues"
   },
-  "homepage": "https://github.com/awesomelewis2007/lab_space#readme"
+  "homepage": "https://github.com/lewisevans2007/lab_space#readme"
 }
