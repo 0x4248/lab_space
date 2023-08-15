@@ -1,7 +1,7 @@
 # 🧪 Lab space
 A collection of pre-configured docker images for quick testing of code.
 
-**Check out:** The [CLI](https://www.github.com/lewisevans2007/lab_space_cli) for running the images quicker and easier in your terminal.
+**Check out:** The [Lab Space CLI](https://www.github.com/lewisevans2007/lab_space_cli) for running the images quicker and easier in your terminal.
 
 ## 📺 Demo
 Here is a example of the bash image in action:
