@@ -4,7 +4,7 @@
 # Licence: GNU General Public License v3.0
 # By: Lewis Evans
 
-FROM alpine:3.18.3
+FROM alpine:3.18.5
 
 LABEL version="1.0.0" \
     name="lab_space_go" \
