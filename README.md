@@ -253,5 +253,21 @@ lab_space run blank
 ## 📦 Dependencies
 - [Docker](https://www.docker.com/)
 
+### Installing Docker on Ubuntu/Debian
+```bash
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io
+```
+
+### Installing Docker on Fedora
+```bash
+sudo dnf install docker
+```
+
+### Installing Docker on Arch
+```bash
+sudo pacman -S docker
+```
+
 ## 📝 License
 This project is licensed under the GNU General Public License v3.0 - see the [LICENCE](LICENCE) file for details.
