@@ -1,8 +1,8 @@
 # Lab Space 
 # A collection of pre-configured docker images for quick testing of code.
-# Github: https://www.github.com/lewisevans2007/lab_space
+# Github: https://www.github.com/0x4248/lab_space
 # Licence: GNU General Public License v3.0
-# By: Lewis Evans
+# By: 0x4248
 
 _normal=$'\e[0m'
 if [ "$USER" = root ]; then

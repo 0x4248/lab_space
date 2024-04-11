@@ -3,9 +3,9 @@
     "description": "A collection of pre-configured docker images for quick testing of code.",
     "version": "",
     "main_file": "none",
-    "author": "Lewis Evans",
+    "author": "0x4248",
     "license": "GNU General Public License v3.0",
-    "url": "https://www.github.com/lewisevans2007/lab_space",
+    "url": "https://www.github.com/0x4248/lab_space",
     "email": "none",
     "languages": [
         "shell",
